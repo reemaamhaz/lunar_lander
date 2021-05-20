@@ -8,9 +8,7 @@ seed = 112
 
 env = gym.make('LunarLander-v2')
 env.seed(seed)
-for i in range(0, 20):
-    s = random.randint(-348,100)
-    scores.append(s)
+
 # get the dimensions of the space
 state_size = env.observation_space.shape[0]
 action_size = env.action_space.n
